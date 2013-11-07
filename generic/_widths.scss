@@ -58,6 +58,17 @@
 
 
     /**
+    * Sevenths
+    */
+    .#{$namespace}one-seventh       { width:14.2857%; }
+    .#{$namespace}two-sevenths      { width:28.5714%; }
+    .#{$namespace}three-sevenths    { width:42.8571%; }
+    .#{$namespace}four-sevenths     { width:57.1429%; }
+    .#{$namespace}five-sevenths     { width:71.3976%; }
+    .#{$namespace}six-sevenths      { width:85.6833%; }
+
+
+    /**
     * Eighths
     */
     .#{$namespace}one-eighth        { width:12.5%; }
@@ -67,6 +78,19 @@
     .#{$namespace}five-eighths      { width:62.5%; }
     .#{$namespace}six-eighths       { @extend .#{$namespace}three-quarters; }
     .#{$namespace}seven-eighths     { width:87.5%; }
+
+
+    /**
+    * Ninths
+    */
+    .#{$namespace}one-ninth         { width:11.11111%; }
+    .#{$namespace}two-ninths        { width:22.22222%; }
+    .#{$namespace}three-ninths      { width:33.33333%; }
+    .#{$namespace}four-ninths       { width:44.44444%; }
+    .#{$namespace}five-ninths       { width:55.55556%; }
+    .#{$namespace}six-ninths        { width:66.66667%; }
+    .#{$namespace}seven-ninths      { width:77.77778%; }
+    .#{$namespace}eight-ninths      { width:88.88889%; }
 
 
     /**
@@ -120,25 +144,38 @@
 
 @if $responsive == true{
 
-@include media-query(palm){
-    @include grid-setup("palm-");
+@include media-query(xxs){
+    @include grid-setup("xxs-");
 }
 
-@include media-query(lap){
-    @include grid-setup("lap-");
+@include media-query(xs){
+    @include grid-setup("xs-");
 }
 
-@include media-query(lap-and-up){
-    @include grid-setup("lap-and-up-");
+@include media-query(sm){
+    @include grid-setup("sm-");
 }
 
-@include media-query(portable){
-    @include grid-setup("portable-");
+@include media-query(med){
+    @include grid-setup("med-");
 }
 
-@include media-query(desk){
-    @include grid-setup("desk-");
+@include media-query(lg){
+    @include grid-setup("lg-");
 }
+
+@include media-query(xl){
+    @include grid-setup("xl-");
+}
+
+@include media-query(xxl){
+    @include grid-setup("xxl-");
+}
+
+@include media-query(xxxl){
+    @include grid-setup("xxxl-");
+}
+
 
 
 /**
@@ -149,9 +186,9 @@
 
 @if $responsive-extra == true{
 
-@include media-query(desk-wide){
-    @include grid-setup("desk-wide-");
-}
+
+
+
 
 }
 

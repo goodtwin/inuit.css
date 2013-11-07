@@ -81,28 +81,43 @@ $push:              false!default;
 /**
  * Note: `$push` variable above must be set to true before enabling these.
  */
-$palm-push:         false!default;
-$lap-push:          false!default;
-$lap-and-up-push:   false!default;
-$portable-push:     false!default;
-$desk-push:         false!default;
+$xxs-push:         false!default;
+$xs-push:          false!default;
+$sm-push:          false!default;
+$med-push:         false!default;
+$lg-push:          false!default;
+$xl-push:          false!default;
+$xxl-push:         false!default;
+$xxxl-push:        false!default;
 
 $pull:              false!default;
 /**
  * Note: `$pull` variable above must be set to true before enabling these.
  */
-$palm-pull:         false!default;
-$lap-pull:          false!default;
-$lap-and-up-pull:   false!default;
-$portable-pull:     false!default;
-$desk-pull:         false!default;
+$xxs-pull:         false!default;
+$xs-pull:          false!default;
+$sm-pull:          false!default;
+$med-pull:         false!default;
+$lg-pull:          false!default;
+$xl-pull:          false!default;
+$xxl-pull:         false!default;
+$xxxl-pull:        false!default;
 
 /**
  * Tell inuit.css when breakpoints start.
+ * GTedit:  Uses stubornella/oocss t-shirt breakpoint naming.
+ *          (xxxl, xxl, xl, lg, med, sm, xs, xxs; full)
+ *          Feel compelled to not use them all
  */
-$lap-start:         481px!default;
-$desk-start:        1024px!default;
-$desk-wide-start:   1200px!default;
+$xxs-start:         300px!default;              // Think small handheld (I dunno when we'd use something like this)
+$xs-start:          481px!default;              // Think handheld
+$sm-start:          600px!default;              // Think large handheld/small tablet (phablet, if you will)
+$med-start:         765px!default;              // Think tablet (our standard breakpoint; start here)
+$lg-start:          900px!default;              // Think lap
+$xl-start:          1100px!default;             // Think lap/desk
+$xxl-start:         1400px!default;             // Think desk
+$xxxl-start:        2000px!default;             // Think larger desk
+$full:              2200px!default;             // It might be helpful to have a page-gutter-width breakpoint (for fixed headers, etc.)
 
 
 
